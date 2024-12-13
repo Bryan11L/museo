@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#897E57</color>
+    <color name="purple_500">#6F5D2D</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="turquesa">#FF03DAC5</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#CACACA</color>
+    <color name="amarillo">#FFEB3B</color>
+    <color name="colorBotonPresionado">#070707</color> <!-- Naranja cuando está presionado -->
+    <color name="colorBotonNoPresionado">#7B7D80</color> <!-- Azul cuando no está presionado -->
+
+</resources>

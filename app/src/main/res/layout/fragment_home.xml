@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- Contenedor para el WebView -->
+
+    <!-- Contenedor para Sabías que -->
+
+    <!-- Contenedor para Dato Curioso -->
+
+    <!-- Contenedor para Frase del Día -->
+
+    <!-- Contenedor para información del museo -->
+
+
+    <RelativeLayout
+        android:layout_width="144dp"
+        android:layout_height="189dp"
+        android:layout_below="@id/sabias_que_icon"
+        android:background="@drawable/redondeado2"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594">
+
+        <ImageView
+            android:id="@+id/dato_curioso_icon"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/cerebro" />
+
+        <TextView
+            android:id="@+id/dato_curioso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dato_curioso_icon"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Dato Curioso:"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dato_curioso"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="En MACCO puedes explorar esculturas y arte ecuatoriano en un entorno virtual."
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="165dp"
+        android:layout_height="192dp"
+        android:layout_below="@id/frase_del_dia"
+        android:background="@drawable/redondeado3"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598">
+
+        <RelativeLayout
+            android:layout_width="186dp"
+            android:layout_height="218dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/sabias_que_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/interrogacion" />
+
+            <TextView
+                android:id="@+id/sabias_que"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/sabias_que_icon"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Sabías que..."
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="103dp"
+                android:layout_below="@id/sabias_que"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif"
+                android:text="MACCO es un proyecto cultural que promueve el conocimiento y la apreciación del arte ecuatoriano."
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="317dp"
+        android:layout_height="166dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <TextView
+        android:id="@+id/frase_del_dia"
+        android:layout_width="313dp"
+        android:layout_height="46dp"
+        android:background="@drawable/redondeado"
+        android:fontFamily="casual"
+        android:text="Frase del día: 'El arte no reproduce lo visible, sino que hace visible.' – Paul Klee"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
